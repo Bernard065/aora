@@ -59,7 +59,7 @@ const SignIn = () => {
               onPress={() => router.push("/sign-up")}
             >
               Sign Up
-            </Text> 
+            </Text>
           </View>
         </View>
       </ScrollView>

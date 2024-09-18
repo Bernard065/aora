@@ -7,7 +7,7 @@ interface FormFieldProps {
   value: string;
   handleChangeText: (e: string) => void;
   otherStyles?: string;
-  keyboardType: "email-address" | "password";
+  keyboardType: string;
   placeholder?: string;
 }
 
@@ -29,6 +29,7 @@ const FormField = ({
           className="flex-1 text-white font-psemibold text-base"
           value={value}
           placeholder={placeholder}
+          placeholderTextColor={"#6B7280"}
           onChangeText={handleChangeText}
           secureTextEntry={title === "Password" && !showPassword}
         />
